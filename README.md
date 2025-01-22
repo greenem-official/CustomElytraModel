@@ -1,25 +1,25 @@
 
-Installation information
+Custom Elytra Model Mod
 =======
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions at [github](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+This is a mod for adding a custom model to minecraft's elytra. Using an own model or animations requires to modify the mod's code, as there is no import feature due to that being way too difficult to make with no good reason to.
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
-
-> **Note**: For Eclipse, use tasks in `Launch Group` instead of ones founds in `Java Application`. A preparation task must run before launching the game. NeoGradle uses launch groups to do these subsequently.
-
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
-
-Mapping Names:
+Main Java Files:
 ============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+
+### For Blockbench exported data (Must be a "Modded Entity" project):  
+org.daylight.mods.customelytra.visual.generated.WingsModelData
+org.daylight.mods.customelytra.visual.generated.WingsAnimation
+
+
+### For modifying how it works and controlling the animations:  
+org.daylight.mods.customelytra.visual.WingsModel
+  
+  
+### For toggling if it's active for different types of entities:
+org.daylight.mods.customelytra.mixins.PlayerRendererMixin
+org.daylight.mods.customelytra.mixins.HumanoidMobRendererMixin
+org.daylight.mods.customelytra.mixins.ArmorStandRendererMixin
 
 Additional Resources: 
 ==========

@@ -26,17 +26,7 @@ public class ArmorStandRendererMixin {
 
         List<RenderLayer<?, ?>> layers = ((IHasLayers) this).hasLayers$getLayers();
 
-//        layers.removeIf(layer -> layer instanceof ElytraLayer);
-        LOGGER.info("Searching for ElytraLayer ARMORSTAND_RENDERER");
-
-        Iterator<RenderLayer<?, ?>> iterator = layers.iterator();
-        while (iterator.hasNext()) {
-            RenderLayer<?, ?> layer = iterator.next();
-            if (layer instanceof ElytraLayer) {
-                iterator.remove();
-                LOGGER.info("Removed ElytraLayer ARMORSTAND_RENDERER");
-            }
-        }
+        layers.removeIf(layer -> layer instanceof ElytraLayer);
 
         renderer.addLayer(new WingsLayer<>(renderer, p_173915_.getModelSet()));
     }

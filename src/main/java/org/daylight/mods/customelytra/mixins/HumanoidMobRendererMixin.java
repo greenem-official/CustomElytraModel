@@ -54,22 +54,7 @@ public abstract class HumanoidMobRendererMixin<T extends Mob, M extends Humanoid
 //            List<RenderLayer<?, ?>> layers = (List<RenderLayer<?, ?>>) field.get(renderer);
         List<RenderLayer<?, ?>> layers = ((IHasLayers) this).hasLayers$getLayers(); // ((IHasLayers) this).customElytra$getLayers();
 
-//        layers.removeIf(layer -> layer instanceof ElytraLayer);
-
-        LOGGER.info("Searching for ElytraLayer HUMANOID_MOB_RENDERER");
-
-        Iterator<RenderLayer<?, ?>> iterator = layers.iterator();
-        while (iterator.hasNext()) {
-            RenderLayer<?, ?> layer = iterator.next();
-            if (layer instanceof ElytraLayer) {
-                iterator.remove();
-                LOGGER.info("Removed ElytraLayer HUMANOID_MOB_RENDERER");
-            }
-        }
-
-//        } catch (NoSuchFieldException | IllegalAccessException e) {
-//            e.printStackTrace();
-//        }
+        layers.removeIf(layer -> layer instanceof ElytraLayer);
 
         renderer.addLayer(new WingsLayer<>(renderer, pContext.getModelSet()));
     }
