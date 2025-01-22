@@ -1,4 +1,4 @@
-package com.example.examplemod.mixins;
+package org.daylight.mods.customelytra.mixins;
 
 import net.minecraft.client.model.geom.LayerDefinitions;
 import org.spongepowered.asm.mixin.Mixin;

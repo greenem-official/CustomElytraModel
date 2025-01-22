@@ -1,4 +1,4 @@
-package com.example.examplemod.formixins;
+package org.daylight.mods.customelytra.formixins;
 
 import net.minecraft.client.renderer.entity.layers.RenderLayer;
 

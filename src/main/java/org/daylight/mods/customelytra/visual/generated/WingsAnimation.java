@@ -1,4 +1,4 @@
-package com.example.examplemod.visual.generated;
+package org.daylight.mods.customelytra.visual.generated;
 
 import net.minecraft.client.animation.AnimationChannel;
 import net.minecraft.client.animation.AnimationDefinition;

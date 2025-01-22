@@ -1,8 +1,8 @@
-package com.example.examplemod.visual;
+package org.daylight.mods.customelytra.visual;
 
-import com.example.examplemod.ExampleMod;
-import com.example.examplemod.visual.generated.WingsAnimation;
-import com.example.examplemod.visual.generated.WingsModelData;
+import org.daylight.mods.customelytra.CustomElytra;
+import org.daylight.mods.customelytra.visual.generated.WingsAnimation;
+import org.daylight.mods.customelytra.visual.generated.WingsModelData;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.logging.LogUtils;
@@ -24,7 +24,7 @@ import org.slf4j.Logger;
 public class WingsModel<T extends LivingEntity> extends HierarchicalModel<T> {
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation(ExampleMod.MODID, "wings_elytra"), "main");
+    public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation(CustomElytra.MODID, "wings_elytra"), "main");
 
     private final ModelPart root;
     private final ModelPart left_wing;

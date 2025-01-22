@@ -1,6 +1,6 @@
-package com.example.examplemod.something;
+package org.daylight.mods.customelytra.something;
 
-import com.example.examplemod.visual.WingsLayer;
+import org.daylight.mods.customelytra.visual.WingsLayer;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.PlayerModel;
 import net.minecraft.client.renderer.entity.EntityRenderDispatcher;

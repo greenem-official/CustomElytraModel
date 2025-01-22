@@ -1,4 +1,4 @@
-package com.example.examplemod.renderers;
+package org.daylight.mods.customelytra.renderers;
 
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;

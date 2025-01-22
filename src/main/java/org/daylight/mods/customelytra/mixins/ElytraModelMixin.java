@@ -1,4 +1,4 @@
-package com.example.examplemod.mixins;
+package org.daylight.mods.customelytra.mixins;
 
 import net.minecraft.client.model.ElytraModel;
 import com.mojang.logging.LogUtils;

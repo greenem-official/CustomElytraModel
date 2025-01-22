@@ -1,7 +1,7 @@
-package com.example.examplemod.mixins;
+package org.daylight.mods.customelytra.mixins;
 
-import com.example.examplemod.formixins.IHasLayers;
-import com.example.examplemod.visual.WingsLayer;
+import org.daylight.mods.customelytra.formixins.IHasLayers;
+import org.daylight.mods.customelytra.visual.WingsLayer;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.renderer.entity.ArmorStandRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;

@@ -1,8 +1,7 @@
-package com.example.examplemod.mixins;
+package org.daylight.mods.customelytra.mixins;
 
-import com.example.examplemod.formixins.IHasLayers;
+import org.daylight.mods.customelytra.formixins.IHasLayers;
 import net.minecraft.client.model.EntityModel;
-import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.LivingEntityRenderer;
 import net.minecraft.client.renderer.entity.layers.RenderLayer;
 import net.minecraft.world.entity.LivingEntity;

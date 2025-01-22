@@ -1,6 +1,6 @@
-package com.example.examplemod.visual;
+package org.daylight.mods.customelytra.visual;
 
-import com.example.examplemod.ExampleMod;
+import org.daylight.mods.customelytra.CustomElytra;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import net.minecraft.client.model.EntityModel;
@@ -19,7 +19,7 @@ import net.minecraft.world.item.Items;
 import org.jetbrains.annotations.NotNull;
 
 public class WingsLayer<T extends LivingEntity, M extends EntityModel<T>> extends RenderLayer<T, M> {
-    private static final ResourceLocation WINGS_LOCATION = new ResourceLocation(ExampleMod.MODID, "textures/elytra/wings_texture.png");
+    private static final ResourceLocation WINGS_LOCATION = new ResourceLocation(CustomElytra.MODID, "textures/elytra/wings_texture.png");
     private final WingsModel<T> elytraModel;
 
     public WingsLayer(RenderLayerParent<T, M> pRenderer, EntityModelSet pModelSet) {
