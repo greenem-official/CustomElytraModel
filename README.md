@@ -7,7 +7,7 @@ This is a mod for adding a custom model to minecraft's elytra. Using an own mode
 Main Java Files:
 ============
 
-### For Blockbench exported data (Must be a "Modded Entity" project):  
+### For Blockbench exported data (must be a "Modded Entity" project):  
 org.daylight.mods.customelytra.visual.generated.WingsModelData
 org.daylight.mods.customelytra.visual.generated.WingsAnimation
 
@@ -20,8 +20,3 @@ org.daylight.mods.customelytra.visual.WingsModel
 org.daylight.mods.customelytra.mixins.PlayerRendererMixin
 org.daylight.mods.customelytra.mixins.HumanoidMobRendererMixin
 org.daylight.mods.customelytra.mixins.ArmorStandRendererMixin
-
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
